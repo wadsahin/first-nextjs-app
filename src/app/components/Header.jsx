@@ -1,3 +1,4 @@
+import { LoginLink } from "@kinde-oss/kinde-auth-nextjs/server";
 import Link from "next/link";
 
 const Header = () => {
@@ -8,8 +9,8 @@ const Header = () => {
         <Link href="/user/profile">Profile</Link>
       </div>
       <div className="flex-none gap-2">
-        <button className="btn btn-neutral btn-sm">Login</button>
-        <button className="btn btn-error btn-sm text-white">Logout</button>
+        <LoginLink className="btn btn-sm btn-neutral text-white">Login</LoginLink>
+        <Link href="/" className="btn btn-error btn-sm text-white">Logout</Link>
       </div>
     </div>
   );

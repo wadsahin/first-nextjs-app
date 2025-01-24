@@ -22,7 +22,7 @@ const BlogDetails = async ({ params }) => {
       <div className="card bg-base-100 w-6/12 mx-auto shadow-xl mt-3">
         <div className="card-body">
           <h2 className="card-title capitalize">{blog?.title}</h2>
-          <p>{blog?.body}</p>
+          <p className="capitalize text-base text-gray-500">{blog?.body}</p>
           <div className="card-actions justify-end mt-3">
             <Link className="btn bg-indigo-500 text-white" href="/">Go to Home</Link>
           </div>

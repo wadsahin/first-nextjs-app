@@ -12,7 +12,7 @@ const Landing = async () => {
     <div>
       {
         data.map(post => <div className="border rounded-md p-2 my-3 flex gap-2 capitalize" key={post.id}>
-          <Link href={`/blog/${post.id}`}><h2>{post.title}</h2></Link>
+          <Link href={`/blog/${post.id}`}><h2>{post.id}. {post.title}</h2></Link>
           <GoLinkExternal />
         </div>)
       }
